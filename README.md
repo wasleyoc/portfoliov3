@@ -1,11 +1,10 @@
-# Niloy Bhowmick
+# Wasley Carvalho
 
 <div align="center">
 
-![Project Banner](./public/demo.png)
-
 ### Midnight Liquid Glass Portfolio
-*A premium, responsive video editing portfolio built with modern web technologies.*
+
+_A premium, responsive video editing portfolio built with modern web technologies._
 
 [![Next.js](https://img.shields.io/badge/Next.js_15-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -20,10 +19,10 @@
 
 This project implements a unique **"Midnight Liquid Glass"** aesthetic, focusing on deep blacks, neon accents, and organic fluidity.
 
--   **Frosted Glass 2.0**: Premium `backdrop-blur-3xl` with milky-white tint for distinct separation.
--   **Unified Liquid Navigation**: A shapeshifting navbar that fluidly expands to contain mobile menus.
--   **Dynamic Interactions**: Mouse-following gradients and spotlight effects.
--   **YouTube Integration**: Custom light-weight players with high-quality playback enforcement.
+- **Frosted Glass 2.0**: Premium `backdrop-blur-3xl` with milky-white tint for distinct separation.
+- **Unified Liquid Navigation**: A shapeshifting navbar that fluidly expands to contain mobile menus.
+- **Dynamic Interactions**: Mouse-following gradients and spotlight effects.
+- **YouTube Integration**: Custom light-weight players with high-quality playback enforcement.
 
 ## 🚀 Getting Started
 
@@ -35,27 +34,33 @@ This project implements a unique **"Midnight Liquid Glass"** aesthetic, focusing
 ### Installation
 
 1.  **Clone the repository**
+
     ```bash
     git clone https://github.com/maruf-pfc/niloy-bhowmick.git
     cd niloy-bhowmick
     ```
 
 2.  **Install dependencies**
+
     ```bash
     pnpm install
     ```
 
 3.  **Set up environment variables**
+
     ```bash
     cp .env.example .env
     ```
+
     Add your environment variables:
+
     ```env
     RESEND_API_KEY=your_resend_api_key_here
     NEXT_PUBLIC_SITE_URL=https://www.itsniloy.me
     ```
 
 4.  **Run the development server**
+
     ```bash
     pnpm dev
     ```
@@ -73,11 +78,13 @@ pnpm start
 ### Running Tests
 
 To run the unit test suite once:
+
 ```bash
 pnpm test
 ```
 
 To run tests in interactive watch mode:
+
 ```bash
 pnpm run test:watch
 ```
@@ -96,9 +103,10 @@ pnpm run test:watch
 4.  Deploy automatically.
 
 ### Other Platforms
--   **Netlify**: Static site deployment with form handling.
--   **AWS Amplify**: Full-stack deployment with API integration.
--   **GitHub Pages**: Static deployment (limited functionality).
+
+- **Netlify**: Static site deployment with form handling.
+- **AWS Amplify**: Full-stack deployment with API integration.
+- **GitHub Pages**: Static deployment (limited functionality).
 
 ## 📂 Project Structure
 
@@ -178,34 +186,34 @@ To add a new project, simply edit `src/lib/data.ts`. No new code required!
 
 ```typescript
 export const videoProjectsData = {
-  "Talking Head": [
+  'Talking Head': [
     {
-      id: "unique-video-id",
-      video_title: "Your Video Title",
-      video_description: "Detailed description...",
-      tags: ["Tag1", "Tag2"],
-      cover_image: "youtube-video-id",
-      publish_date: "2024-01-01",
-      client_name: "Client Name",
-      client_image: "/companies/client-logo.png",
-      client_feedback: "Client testimonial...",
-      video_link: "https://youtu.be/video-id",
-      project_images: ["/path/to/image1.jpg"],
-      category: "Talking Head",
-      duration: "5:30",
-      software_used: ["DaVinci Resolve", "After Effects"],
+      id: 'unique-video-id',
+      video_title: 'Your Video Title',
+      video_description: 'Detailed description...',
+      tags: ['Tag1', 'Tag2'],
+      cover_image: 'youtube-video-id',
+      publish_date: '2024-01-01',
+      client_name: 'Client Name',
+      client_image: '/companies/client-logo.png',
+      client_feedback: 'Client testimonial...',
+      video_link: 'https://youtu.be/video-id',
+      project_images: ['/path/to/image1.jpg'],
+      category: 'Talking Head',
+      duration: '5:30',
+      software_used: ['DaVinci Resolve', 'After Effects'],
     },
   ],
-};
+}
 ```
 
 ## 🛠️ Tech Stack
 
--   **Core**: Next.js 15, TypeScript
--   **Styling**: Tailwind CSS, Shadcn/ui
--   **Animation**: Framer Motion
--   **Backend**: Resend (Email), Server Actions
--   **Testing**: Vitest (Unit testing)
+- **Core**: Next.js 15, TypeScript
+- **Styling**: Tailwind CSS, Shadcn/ui
+- **Animation**: Framer Motion
+- **Backend**: Resend (Email), Server Actions
+- **Testing**: Vitest (Unit testing)
 
 ---
 
