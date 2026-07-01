@@ -17,14 +17,14 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    default: 'Niloy Bhowmick – Video Editor & Motion Graphics Designer',
-    template: '%s | Niloy Bhowmick',
+    default: 'Wasley Carvalho – Editor de Vídeo & Vídeomaker',
+    template: '%s | Wasley Carvalho',
   },
   description:
     'Impulsionando você e sua marca ao mundo — com estilo, precisão e um toque de magia cinematográfica. Wasley Carvalho é especialista em Premiere Pro, After Effects, Photoshop, Illustrator & DaVinci Resolve — oferecendo edições cinematográficas, motion graphics e narrativas refinadas.',
   keywords: [
     'Wasley Carvalho',
-    'Video Editor',
+    'Editor de Vídeo',
     'Videomaker',
     'DaVinci Resolve',
     'Premiere Pro',
