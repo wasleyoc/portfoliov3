@@ -78,8 +78,8 @@ export default function ContactPage() {
             </span>
           </h1>
           <p className="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed relative z-10">
-            Tem um projeto em mente ou quer colaborar? Adoraria ouvir de você.
-            Vamos criar algo incrível juntos!
+            Tem um projeto em mente ou quer colaborar? <br />
+            Adoraria ouvir de você. Vamos criar algo incrível juntos!
           </p>
         </m.div>
 
@@ -103,7 +103,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-gray-400 text-sm">Email</p>
                     <a
-                      href="mailto:contact.niloybhowmick@gmail.com"
+                      href="mailto:wasleyoliveiradecarvalho@gmail.com"
                       className="text-white hover:text-blue-400 transition-colors"
                     >
                       wasleyoliveiradecarvalho@gmail.com
@@ -134,7 +134,9 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">Localização</p>
-                    <p className="text-white">Disponível no Mundo (Remoto)</p>
+                    <p className="text-white">
+                      Remoto, Cândido Sales - BA e Região (Presencial)
+                    </p>
                   </div>
                 </div>
 

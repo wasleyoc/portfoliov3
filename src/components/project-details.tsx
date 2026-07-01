@@ -129,15 +129,15 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-white">
-                  Project Details
+                  Detalhes do Projetos
                 </h3>
                 <div className="space-y-2 text-sm">
                   <div className="flex items-center text-gray-400">
                     <Calendar className="mr-2" size={14} />
                     <span>
-                      Published:{' '}
+                      Publicado:{' '}
                       {new Date(project.publish_date).toLocaleDateString(
-                        'en-US',
+                        'pt-BR',
                         {
                           year: 'numeric',
                           month: 'short',
@@ -148,7 +148,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                   </div>
                   <div className="flex items-center text-gray-400">
                     <User className="mr-2" size={14} />
-                    <span>Client: {project.client_name}</span>
+                    <span>Cliente: {project.client_name}</span>
                   </div>
                 </div>
               </div>
@@ -156,7 +156,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
               {project.software_used && (
                 <div>
                   <h3 className="text-lg font-semibold mb-3 text-white">
-                    Software Used
+                    Ferramentas Utilizadas
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {project.software_used.map((software) => (
@@ -175,7 +175,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
 
             <div className="mb-8">
               <h3 className="text-lg font-semibold mb-3 text-white">
-                Categories
+                Categorias
               </h3>
               <div className="flex flex-wrap gap-2">
                 {project.category.map((category) => (

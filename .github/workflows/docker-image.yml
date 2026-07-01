@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: ["main"]
+    branches: ['main']
   pull_request:
-    branches: ["main"]
+    branches: ['main']
 
 jobs:
   build:
@@ -27,5 +27,5 @@ jobs:
         run: |
           docker buildx build \
             --platform linux/amd64 \
-            -t marufsarker/niloybhowmick:latest \
+            -t marufsarker/wasley:latest \
             --push .

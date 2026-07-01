@@ -13,7 +13,7 @@ import {
 export const videoEditingSkills = [
   {
     name: 'Adobe Premiere Pro',
-    image_link: '/tools/Adobe_Premiere_Pro_CC.png',
+    image_link: '/tools/Adobe_Premiere.png',
     icon: Scissors,
     description:
       'Edição avançada de vídeo, sincronização multicâmera e otimização do fluxo de trabalho',
@@ -21,22 +21,36 @@ export const videoEditingSkills = [
   },
   {
     name: 'After Effects',
-    image_link: '/tools/Adobe_After_Effects_CC.png',
+    image_link: '/tools/Adobe_After_Effects.png',
     icon: Sparkles,
     description: 'Motion graphics, efeitos visuais e animações avançadas',
     color: 'text-blue-400',
   },
   {
     name: 'Adobe Photoshop',
-    image_link: '/tools/Adobe_Photoshop_CC.png',
+    image_link: '/tools/Adobe_Photoshop.png',
     icon: Palette,
     description:
       'Design de thumbnail, criação de gráficos e manipulação de imagens',
     color: 'text-cyan-400',
   },
   {
+    name: 'Adobe Lightroom',
+    image_link: '/tools/Adobe_Lightroom2.png',
+    icon: Camera,
+    description: 'Edição de fotos, organização e criação de portfolios',
+    color: 'text-orange-400',
+  },
+  {
+    name: 'Adobe Illustrator',
+    image_link: '/tools/Adobe_Illustrator.png',
+    icon: Palette,
+    description: 'Design de gráficos vetoriais e ilustrações',
+    color: 'text-blue-400',
+  },
+  {
     name: 'Adobe Audition',
-    image_link: '/tools/Adobe_Audition_CC.png',
+    image_link: '/tools/Adobe_Audition.png',
     icon: Volume2,
     description: 'Edição de áudio, redução de ruído e melhoramento de som',
     color: 'text-green-400',
@@ -46,6 +60,13 @@ export const videoEditingSkills = [
     image_link: '/tools/DaVinci_Resolve_Studio.png',
     icon: Film,
     description: 'Correção de cor profissional, edição e pós-produção de áudio',
+    color: 'text-orange-400',
+  },
+  {
+    name: 'CapCut',
+    image_link: '/tools/Capcut.png',
+    icon: Film,
+    description: 'Edições de vídeos rápidas, utilizadas em eventos no mobile',
     color: 'text-orange-400',
   },
 ]
@@ -88,7 +109,7 @@ export const specializations = [
       'Criando conteúdo corporativo polido que comunica efetivamente',
   },
   {
-    title: 'Content Educativo',
+    title: 'Conteúdo Educativo',
     skills: [
       'Gravação de Tela',
       'Estrutura de Tutorial',

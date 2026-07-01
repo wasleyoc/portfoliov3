@@ -177,7 +177,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     variant="ghost"
                     className="h-8 px-5 text-xs font-medium text-white bg-white/5 border border-white/10 rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.1)] hover:shadow-[0_4px_20px_rgba(255,255,255,0.1)] hover:bg-white/10 hover:border-white/20 transition-all duration-300 backdrop-blur-xl"
                   >
-                    Details
+                    Detalhes
                   </Button>
                 </Link>
               </div>

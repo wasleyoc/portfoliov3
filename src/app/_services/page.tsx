@@ -1,8 +1,8 @@
-"use client";
+'use client'
 
-import { m } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import GlassmorphismCard from "@/components/glassmorphism-card";
+import { m } from 'framer-motion'
+import { Button } from '@/components/ui/button'
+import GlassmorphismCard from '@/components/glassmorphism-card'
 import {
   Play,
   Palette,
@@ -12,139 +12,139 @@ import {
   Zap,
   ArrowRight,
   Check,
-} from "lucide-react";
+} from 'lucide-react'
 
 export default function ServicesPage() {
   const services = [
     {
       icon: Play,
-      title: "YouTube & Social Media Video Editing",
+      title: 'YouTube & Social Media Video Editing',
       description:
-        "Engaging edits optimized for different platforms with perfect pacing and retention hooks.",
+        'Engaging edits optimized for different platforms with perfect pacing and retention hooks.',
       features: [
-        "Platform-specific optimization",
-        "Retention-focused editing",
-        "Thumbnail creation",
-        "SEO-friendly titles",
-        "Engagement hooks",
+        'Platform-specific optimization',
+        'Retention-focused editing',
+        'Thumbnail creation',
+        'SEO-friendly titles',
+        'Engagement hooks',
       ],
-      color: "text-red-400",
+      color: 'text-red-400',
     },
     {
       icon: Film,
-      title: "Course & Tutorial Video Editing",
+      title: 'Course & Tutorial Video Editing',
       description:
-        "Clear, educational content with smooth transitions and professional presentation.",
+        'Clear, educational content with smooth transitions and professional presentation.',
       features: [
-        "Screen recording editing",
-        "Multi-camera sync",
-        "Chapter markers",
-        "Subtitle integration",
-        "Interactive elements",
+        'Screen recording editing',
+        'Multi-camera sync',
+        'Chapter markers',
+        'Subtitle integration',
+        'Interactive elements',
       ],
-      color: "text-blue-400",
+      color: 'text-blue-400',
     },
     {
       icon: Sparkles,
-      title: "Motion Graphics & Animated Titles",
+      title: 'Motion Graphics & Animated Titles',
       description:
-        "Eye-catching animations and graphics that enhance your storytelling.",
+        'Eye-catching animations and graphics that enhance your storytelling.',
       features: [
-        "Custom animations",
-        "Kinetic typography",
-        "Infographic animations",
-        "Transition effects",
-        "Brand-consistent design",
+        'Custom animations',
+        'Kinetic typography',
+        'Infographic animations',
+        'Transition effects',
+        'Brand-consistent design',
       ],
-      color: "text-purple-400",
+      color: 'text-purple-400',
     },
     {
       icon: Palette,
-      title: "Color Correction & Grading",
+      title: 'Color Correction & Grading',
       description:
-        "Professional color work that gives your videos a cinematic and polished look.",
+        'Professional color work that gives your videos a cinematic and polished look.',
       features: [
-        "Cinematic color grading",
-        "Color matching",
-        "Exposure correction",
-        "Skin tone enhancement",
-        "Mood creation",
+        'Cinematic color grading',
+        'Color matching',
+        'Exposure correction',
+        'Skin tone enhancement',
+        'Mood creation',
       ],
-      color: "text-green-400",
+      color: 'text-green-400',
     },
     {
       icon: Zap,
-      title: "Logo Animations & Lower Thirds",
+      title: 'Logo Animations & Lower Thirds',
       description:
-        "Professional branding elements that make your content look premium.",
+        'Professional branding elements that make your content look premium.',
       features: [
-        "Logo reveals",
-        "Animated lower thirds",
-        "Brand package creation",
-        "Consistent styling",
-        "Multiple variations",
+        'Logo reveals',
+        'Animated lower thirds',
+        'Brand package creation',
+        'Consistent styling',
+        'Multiple variations',
       ],
-      color: "text-yellow-400",
+      color: 'text-yellow-400',
     },
     {
       icon: Volume2,
-      title: "Audio Sync & Cleanup",
+      title: 'Audio Sync & Cleanup',
       description:
-        "Crystal clear audio with perfect synchronization and noise reduction.",
+        'Crystal clear audio with perfect synchronization and noise reduction.',
       features: [
-        "Audio synchronization",
-        "Noise reduction",
-        "Audio enhancement",
-        "Music mixing",
-        "Voice optimization",
+        'Audio synchronization',
+        'Noise reduction',
+        'Audio enhancement',
+        'Music mixing',
+        'Voice optimization',
       ],
-      color: "text-cyan-400",
+      color: 'text-cyan-400',
     },
-  ];
+  ]
 
   const packages = [
     {
-      name: "Basic Edit",
-      price: "$50-100",
-      description: "Perfect for simple YouTube videos and social media content",
+      name: 'Basic Edit',
+      price: '$50-100',
+      description: 'Perfect for simple YouTube videos and social media content',
       features: [
-        "Basic cuts and transitions",
-        "Color correction",
-        "Audio sync",
-        "Simple graphics",
-        "1-2 revisions",
+        'Basic cuts and transitions',
+        'Color correction',
+        'Audio sync',
+        'Simple graphics',
+        '1-2 revisions',
       ],
       popular: false,
     },
     {
-      name: "Professional Edit",
-      price: "$100-250",
-      description: "Comprehensive editing for professional content",
+      name: 'Professional Edit',
+      price: '$100-250',
+      description: 'Comprehensive editing for professional content',
       features: [
-        "Advanced editing techniques",
-        "Motion graphics",
-        "Color grading",
-        "Audio enhancement",
-        "Custom animations",
-        "3-5 revisions",
+        'Advanced editing techniques',
+        'Motion graphics',
+        'Color grading',
+        'Audio enhancement',
+        'Custom animations',
+        '3-5 revisions',
       ],
       popular: true,
     },
     {
-      name: "Premium Package",
-      price: "$250-500",
-      description: "Full production service for high-end content",
+      name: 'Premium Package',
+      price: '$250-500',
+      description: 'Full production service for high-end content',
       features: [
-        "Complete post-production",
-        "Advanced motion graphics",
-        "Professional color grading",
-        "Audio mastering",
-        "Custom branding elements",
-        "Unlimited revisions",
+        'Complete post-production',
+        'Advanced motion graphics',
+        'Professional color grading',
+        'Audio mastering',
+        'Custom branding elements',
+        'Unlimited revisions',
       ],
       popular: false,
     },
-  ];
+  ]
 
   return (
     <div className="min-h-screen py-20 px-4">
@@ -228,7 +228,7 @@ export default function ServicesPage() {
                 transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
               >
                 <GlassmorphismCard
-                  className={`p-8 h-full relative ${pkg.popular ? "ring-2 ring-blue-500" : ""}`}
+                  className={`p-8 h-full relative ${pkg.popular ? 'ring-2 ring-blue-500' : ''}`}
                 >
                   {pkg.popular && (
                     <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
@@ -261,7 +261,7 @@ export default function ServicesPage() {
                     ))}
                   </ul>
                   <Button
-                    className={`w-full ${pkg.popular ? "bg-blue-600 hover:bg-blue-700" : "bg-gray-700 hover:bg-gray-600"}`}
+                    className={`w-full ${pkg.popular ? 'bg-blue-600 hover:bg-blue-700' : 'bg-gray-700 hover:bg-gray-600'}`}
                     asChild
                   >
                     <a href="/contact">Get Started</a>
@@ -281,31 +281,32 @@ export default function ServicesPage() {
         >
           <GlassmorphismCard className="p-8">
             <h3 className="text-2xl font-semibold mb-6 text-white text-center">
-              My Process
+              Meu Processo
             </h3>
             <div className="grid md:grid-cols-4 gap-6">
               {[
                 {
-                  step: "01",
-                  title: "Consultation",
+                  step: '01',
+                  title: 'Consulta',
                   description:
-                    "We discuss your vision, goals, and requirements",
+                    'Discutimos sua visão, seus objetivos e suas necessidades',
                 },
                 {
-                  step: "02",
-                  title: "Planning",
+                  step: '02',
+                  title: 'Planejamento',
                   description:
-                    "I create a detailed plan and timeline for your project",
+                    'Crio um plano detalhado e uma linha do tempo para seu projeto',
                 },
                 {
-                  step: "03",
-                  title: "Production",
-                  description: "I work on your project with regular updates",
+                  step: '03',
+                  title: 'Produção',
+                  description:
+                    'Trabalho no seu projeto com atualizações regulares',
                 },
                 {
-                  step: "04",
-                  title: "Delivery",
-                  description: "Final review, revisions, and project delivery",
+                  step: '04',
+                  title: 'Entrega',
+                  description: 'Revisão final, revisões e entrega do projeto',
                 },
               ].map((process) => (
                 <div key={process.step} className="text-center">
@@ -331,21 +332,21 @@ export default function ServicesPage() {
         >
           <GlassmorphismCard className="p-8">
             <h3 className="text-2xl font-semibold mb-4 text-white">
-              Ready to Start Your Project?
+              Pronto para começar seu projeto?
             </h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Let's discuss your project and create something amazing together.
-              I'm here to help bring your vision to life with professional video
-              editing and motion graphics.
+              Vamos conversar sobre o seu projeto e criar algo incrível juntos.
+              Estou aqui para ajudar a dar vida à sua visão com edição
+              profissional de vídeo e videomaker.
             </p>
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
               <a href="/contact">
-                Get a Quote <ArrowRight className="ml-2" size={20} />
+                Solicitar Orçamento <ArrowRight className="ml-2" size={20} />
               </a>
             </Button>
           </GlassmorphismCard>
         </m.div>
       </div>
     </div>
-  );
+  )
 }

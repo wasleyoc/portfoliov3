@@ -2,20 +2,31 @@ import { VideoProject } from '@/types/videos'
 
 export const allVideoProjects: VideoProject[] = [
   {
-    id: 'rVVeLdouViU',
-    video_title: 'একজন ফেসবুক ইঞ্জিনিয়ারের রিজিউমি কেমন হয়?',
-    video_description: `How to Build Your Perfect Resume: Learn from a FAANG Employee Example! Are you ready to take your career to new heights and secure your dream job at a top tech company? Join us on this exclusive journey inside the mind of a FAANG employee as we unveil the secrets of their perfect resume! In this eye-opening video, you'll discover the exact strategies and tips used by the industry's finest to stand out from the crowd and impress recruiters.`,
-    tags: ['Resume Tips', 'FAANG Career', 'Job Preparation', 'Career Advice'],
-    cover_image: 'rVVeLdouViU',
-    publish_date: '2024-08-04',
-    client_name: 'Stack Learner',
-    client_image: '/companies/sl-logo.png',
+    id: 'iNY-OIHilME',
+    video_title: 'Por que Hiroshima é habitável e Chernobyl não?',
+    video_description: `Se uma bomba nuclear projetada para destruir caiu sobre Hiroshima em 1945, por que a cidade é habitável hoje, enquanto Chernobyl — onde nunca caiu uma bomba — permanece uma zona de exclusão abandonada quase 40 anos depois?.
+    Essa comparação parece óbvia, mas é um dos erros mais comuns e enganosos da internet. Ela é usada constantemente para negar a história ou a física por trás da energia nuclear.
+    Neste vídeo, o Matematizei vai desmontar essa comparação ponto a ponto, usando apenas ciência, física nuclear e dados históricos — sem ideologia ou teorias da conspiração. Vamos substituir a intuição pelo entendimento real sobre como essas duas tragédias ocorreram.`,
+    tags: [
+      'Conhecimento Gerais',
+      'FAANG Career',
+      'Job Preparation',
+      'Career Advice',
+    ],
+    cover_image: 'iNY-OIHilME',
+    publish_date: '2026-01-16',
+    client_name: 'Andreza',
+    client_image: '/companies/andreza.jpg',
     client_feedback: '',
-    video_link: 'https://youtu.be/rVVeLdouViU?si=LwWPmI4F34mwLNw8',
+    video_link: 'https://www.youtube.com/watch?v=iNY-OIHilME',
     project_images: [],
-    category: ['Talking Head', 'Explainer'],
-    duration: '6:32',
-    software_used: ['DaVinci Resolve'],
+    category: [],
+    duration: '20:14',
+    software_used: [
+      'Adobe Premiere Pro',
+      'Adobe After Effects',
+      'Adobe Photoshop',
+    ],
   },
   {
     id: 'JSZmQxg3fos',
