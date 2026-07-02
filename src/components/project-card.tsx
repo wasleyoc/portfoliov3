@@ -154,7 +154,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-xs font-medium text-white line-clamp-1 max-w-[100px] truncate">
+                  <span className="text-xs font-medium text-white line-clamp-1 max-w-25 truncate">
                     {project.client_name}
                   </span>
                   <span className="text-[10px] text-gray-500">
