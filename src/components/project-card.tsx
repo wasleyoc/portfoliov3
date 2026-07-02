@@ -159,10 +159,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                   </span>
                   <span className="text-[10px] text-gray-500">
                     {new Date(project.publish_date).toLocaleDateString(
-                      'en-US',
+                      'pt-BR',
                       {
                         year: 'numeric',
-                        month: 'numeric',
+                        month: 'short',
                         day: 'numeric',
                       },
                     )}
