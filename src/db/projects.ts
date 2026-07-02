@@ -89,4 +89,20 @@ export const allVideoProjects: VideoProject[] = [
       'Adobe Photoshop',
     ],
   },
+  {
+    id: 'DZk2UpFJS4O',
+    video_title: 'Faça terapia, priorize-se!',
+    video_description: 'Descrição do conteúdo do Instagram',
+    tags: ['Instagram', 'Psicologia', 'Conteúdo'],
+    cover_image: 'DZk2UpFJS4O', // ID do post do Instagram
+    publish_date: '2026-01-13',
+    client_name: 'Ádila Rebeca',
+    client_image: '/companies/adila.jpg',
+    client_feedback: '',
+    video_link: 'https://www.instagram.com/p/DZk2UpFJS4O/',
+    project_images: [],
+    category: ['Vídeos Curtos'],
+    platform: 'instagram', // Define que é um post/vídeo do Instagram
+    software_used: ['Adobe Premiere Pro'],
+  },
 ]

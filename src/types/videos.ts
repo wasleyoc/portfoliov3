@@ -1,22 +1,25 @@
+export type Platform = 'youtube' | 'instagram' | 'reels'
+
 export interface VideoProject {
-  id: string;
-  video_title: string;
-  video_description: string;
-  tags: string[];
-  cover_image: string;
-  publish_date: string;
-  client_name: string;
-  client_image: string;
-  client_feedback: string;
-  video_link: string;
-  project_images: string[];
-  category: string[];
-  duration?: string;
-  software_used?: string[];
+  id: string
+  video_title: string
+  video_description: string
+  tags: string[]
+  cover_image: string
+  publish_date: string
+  client_name: string
+  client_image: string
+  client_feedback: string
+  video_link: string
+  project_images: string[]
+  category: string[]
+  duration?: string
+  software_used?: string[]
+  platform?: Platform // 'youtube' (default), 'instagram', 'reels'
 }
 
 export interface Client {
-  id: string;
-  name: string;
-  logo: string;
+  id: string
+  name: string
+  logo: string
 }

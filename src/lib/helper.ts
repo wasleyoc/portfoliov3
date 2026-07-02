@@ -4,9 +4,12 @@ import { Client, VideoProject } from '@/types/videos'
 
 // Helper function to get all projects sorted by date (latest first)
 export const getAllVideoProjects = (): VideoProject[] => {
+  const parseDate = (dateStr: string) => {
+    const [year, month, day] = dateStr.split('-').map(Number)
+    return new Date(year, month - 1, day).getTime()
+  }
   return [...allVideoProjects].sort(
-    (a, b) =>
-      new Date(b.publish_date).getTime() - new Date(a.publish_date).getTime(),
+    (a, b) => parseDate(b.publish_date) - parseDate(a.publish_date),
   )
 }
 
@@ -26,9 +29,12 @@ export const getVideoProjectsByCategory = (
     project.category.includes(category),
   )
 
+  const parseDate = (dateStr: string) => {
+    const [year, month, day] = dateStr.split('-').map(Number)
+    return new Date(year, month - 1, day).getTime()
+  }
   return filteredProjects.sort(
-    (a, b) =>
-      new Date(b.publish_date).getTime() - new Date(a.publish_date).getTime(),
+    (a, b) => parseDate(b.publish_date) - parseDate(a.publish_date),
   )
 }
 

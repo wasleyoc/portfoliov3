@@ -14,9 +14,16 @@ interface ProjectCardProps {
   project: VideoProject
 }
 
+const PLATFORM_DEFAULTS = {
+  youtube: 'youtube',
+  instagram: 'instagram',
+  reels: 'instagram',
+} as const
+
 export default function ProjectCard({ project }: ProjectCardProps) {
   const [isPlaying, setIsPlaying] = useState(false)
   const cardRef = useRef<HTMLDivElement>(null)
+  const platform = project.platform || 'youtube'
 
   // Handle click outside to stop playing
   useEffect(() => {
@@ -47,6 +54,68 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     setIsPlaying(false)
   }
 
+  const getYouTubeThumbnail = () => {
+    return `https://img.youtube.com/vi/${project.cover_image}/maxresdefault.jpg`
+  }
+
+  const renderMediaPlayer = () => {
+    if (platform === 'youtube') {
+      return (
+        <iframe
+          src={`https://www.youtube.com/embed/${project.cover_image}?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1`}
+          title={project.video_title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="w-full h-full border-0"
+        />
+      )
+    }
+
+    if (platform === 'instagram') {
+      return (
+        <iframe
+          src={`https://www.instagram.com/p/${project.cover_image}/embed`}
+          title={project.video_title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="w-full h-full border-0"
+          style={{ minHeight: '400px' }}
+        />
+      )
+    }
+
+    return null
+  }
+
+  const renderThumbnail = () => {
+    if (platform === 'youtube') {
+      return (
+        <Image
+          src={getYouTubeThumbnail()}
+          alt={project.video_title}
+          fill
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      )
+    }
+
+    // For Instagram, use the cover_image if it's a URL, otherwise use a placeholder
+    const thumbnailUrl = project.cover_image.startsWith('http')
+      ? project.cover_image
+      : '/placeholder.svg'
+
+    return (
+      <Image
+        src={thumbnailUrl}
+        alt={project.video_title}
+        fill
+        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
+    )
+  }
+
   return (
     <div ref={cardRef} className="h-full">
       <GlassmorphismCard className="h-full group hover:shadow-2xl hover:shadow-blue-900/10 transition-shadow duration-500 flex flex-col">
@@ -62,13 +131,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                   exit={{ opacity: 0 }}
                   className="absolute inset-0 z-20"
                 >
-                  <iframe
-                    src={`https://www.youtube.com/embed/${project.cover_image}?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1`}
-                    title={project.video_title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="w-full h-full border-0"
-                  />
+                  {renderMediaPlayer()}
                   <button
                     onClick={handleStopClick}
                     className="absolute top-2 right-2 bg-black/60 hover:bg-black/80 text-white p-1.5 rounded-full backdrop-blur-md transition-colors z-30"
@@ -89,13 +152,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     exit={{ opacity: 0 }}
                     className="w-full h-full"
                   >
-                    <Image
-                      src={`https://img.youtube.com/vi/${project.cover_image}/maxresdefault.jpg`}
-                      alt={project.video_title}
-                      fill
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    />
+                    {renderThumbnail()}
                   </m.div>
 
                   {/* Play Button Overlay */}
@@ -158,14 +215,19 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     {project.client_name}
                   </span>
                   <span className="text-[10px] text-gray-500">
-                    {new Date(project.publish_date).toLocaleDateString(
-                      'pt-BR',
-                      {
-                        year: 'numeric',
-                        month: 'short',
-                        day: 'numeric',
-                      },
-                    )}
+                    {(() => {
+                      const [year, month, day] = project.publish_date
+                        .split('-')
+                        .map(Number)
+                      return new Date(year, month - 1, day).toLocaleDateString(
+                        'pt-BR',
+                        {
+                          year: 'numeric',
+                          month: 'short',
+                          day: 'numeric',
+                        },
+                      )
+                    })()}
                   </span>
                 </div>
               </div>

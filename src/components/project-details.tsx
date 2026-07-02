@@ -136,14 +136,20 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                     <Calendar className="mr-2" size={14} />
                     <span>
                       Publicado:{' '}
-                      {new Date(project.publish_date).toLocaleDateString(
-                        'pt-BR',
-                        {
+                      {(() => {
+                        const [year, month, day] = project.publish_date
+                          .split('-')
+                          .map(Number)
+                        return new Date(
+                          year,
+                          month - 1,
+                          day,
+                        ).toLocaleDateString('pt-BR', {
                           year: 'numeric',
                           month: 'short',
                           day: 'numeric',
-                        },
-                      )}
+                        })
+                      })()}
                     </span>
                   </div>
                   <div className="flex items-center text-gray-400">
