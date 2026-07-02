@@ -16,7 +16,7 @@ export const allVideoProjects: VideoProject[] = [
     cover_image: 'iNY-OIHilME',
     publish_date: '2026-01-16',
     client_name: 'Andreza',
-    client_image: '/companies/andreza.jpg',
+    client_image: '/companies/Andreza.jpg',
     client_feedback: '',
     video_link: 'https://www.youtube.com/watch?v=iNY-OIHilME',
     project_images: [],
