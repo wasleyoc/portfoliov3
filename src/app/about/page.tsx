@@ -112,7 +112,7 @@ export default function AboutPage() {
           </m.div>
 
           {/* 4. Global Reach - Visual Map */}
-          <m.divs
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
@@ -146,7 +146,7 @@ export default function AboutPage() {
               className="h-full"
               icon={<MapPin className="h-4 w-4 text-indigo-500" />}
             />
-          </m.divs>
+          </m.div>
 
           {/* 5. The Philosophy - Quote */}
           <m.div
