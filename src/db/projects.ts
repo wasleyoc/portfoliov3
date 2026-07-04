@@ -105,6 +105,27 @@ export const allVideoProjects: VideoProject[] = [
       'Adobe Photoshop',
     ],
   },
+  {
+    id: '7qnIrAsjtXM',
+    video_title: 'Agostinho era teólogo gente boa? | Pastor Rodrigo Mocellin',
+    video_description:
+      'Nos últimos dias, pastores têm defendido que atração homossexual não é pecado. Alguns até afirmam que sua posição é a posição da igreja e que Agostinho pensava assim, Vou mostrar que isto é mentira.',
+    tags: ['Gameplay', 'Role Play', 'React'],
+    cover_image: 't_srzPHPh28',
+    publish_date: '2026-03-25',
+    client_name: 'Pastor Rodrigo Mocellin',
+    client_image: '/companies/mocellin.jpg',
+    client_feedback: '',
+    video_link: 'https://youtu.be/7qnIrAsjtXM?si=NZYmG1g4mZiYx6Eb',
+    project_images: [],
+    category: ['Vídeos Longos'],
+    duration: '13:06',
+    software_used: [
+      'Adobe Premiere Pro',
+      'Adobe After Effects',
+      'Adobe Photoshop',
+    ],
+  },
   // {
   //   id: 'DZk2UpFJS4O',
   //   video_title: 'Faça terapia, priorize-se!',
