@@ -30,15 +30,14 @@ export const videoEditingSkills = [
     name: 'Adobe Photoshop',
     image_link: '/tools/Adobe_Photoshop.png',
     icon: Palette,
-    description:
-      'Design de thumbnail, criação de gráficos e manipulação de imagens',
+    description: 'Thumbnail e manipulação de imagens',
     color: 'text-cyan-400',
   },
   {
     name: 'Adobe Lightroom',
     image_link: '/tools/Adobe_Lightroom2.png',
     icon: Camera,
-    description: 'Edição de fotos, organização e criação de portfolios',
+    description: 'Edição de fotos',
     color: 'text-orange-400',
   },
   {
@@ -59,7 +58,7 @@ export const videoEditingSkills = [
     name: 'DaVinci Resolve',
     image_link: '/tools/DaVinci_Resolve_Studio.png',
     icon: Film,
-    description: 'Correção de cor profissional, edição e pós-produção de áudio',
+    description: 'Correção de cor profissional e edição de vídeo',
     color: 'text-orange-400',
   },
   {

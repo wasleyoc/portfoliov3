@@ -7,12 +7,7 @@ export const allVideoProjects: VideoProject[] = [
     video_description: `Se uma bomba nuclear projetada para destruir caiu sobre Hiroshima em 1945, por que a cidade é habitável hoje, enquanto Chernobyl — onde nunca caiu uma bomba — permanece uma zona de exclusão abandonada quase 40 anos depois?.
     Essa comparação parece óbvia, mas é um dos erros mais comuns e enganosos da internet. Ela é usada constantemente para negar a história ou a física por trás da energia nuclear.
     Neste vídeo, o Matematizei vai desmontar essa comparação ponto a ponto, usando apenas ciência, física nuclear e dados históricos — sem ideologia ou teorias da conspiração. Vamos substituir a intuição pelo entendimento real sobre como essas duas tragédias ocorreram.`,
-    tags: [
-      'Conhecimento Gerais',
-      'FAANG Career',
-      'Job Preparation',
-      'Career Advice',
-    ],
+    tags: ['Conhecimento Gerais', 'Terremoto'],
     cover_image: 'iNY-OIHilME',
     publish_date: '2026-01-16',
     client_name: 'Andreza',
@@ -53,7 +48,7 @@ export const allVideoProjects: VideoProject[] = [
     id: 'Z3fCyAIiews',
     video_title: 'FOI DEBOCHAR DOS OUTROS E NAO AGUENTOU A RESPOSTA',
     video_description: 'Vídeo não tem descrição específica.',
-    tags: ['Entreterimento', 'Redes Sociais', 'Comédia', 'Reação'],
+    tags: ['Entretenimento', 'Redes Sociais', 'Comédia', 'Reação'],
     cover_image: 'cAdU_jQYCoA',
     publish_date: '2025-01-08',
     client_name: 'Lógica 101',
@@ -90,19 +85,40 @@ export const allVideoProjects: VideoProject[] = [
     ],
   },
   {
-    id: 'DZk2UpFJS4O',
-    video_title: 'Faça terapia, priorize-se!',
-    video_description: 'Descrição do conteúdo do Instagram',
-    tags: ['Instagram', 'Psicologia', 'Conteúdo'],
-    cover_image: 'DZk2UpFJS4O', // ID do post do Instagram
-    publish_date: '2026-01-13',
-    client_name: 'Ádila Rebeca',
-    client_image: '/companies/adila.jpg',
+    id: 'zh7K1Fqrv3w',
+    video_title: 'PATRICK MELHORES MOMENTOS - 360º 👑',
+    video_description:
+      'Meu nome é Patrick , moro em Duque de Caxias RJ , sou focado em games de GTAV RP e focado no TOP P1.',
+    tags: ['Gameplay', 'Role Play', 'React'],
+    cover_image: 'zh7K1Fqrv3w',
+    publish_date: '2022-03-02',
+    client_name: 'Patrick RP',
+    client_image: '/companies/patrick.jpg',
     client_feedback: '',
-    video_link: 'https://www.instagram.com/p/DZk2UpFJS4O/',
+    video_link: 'https://youtu.be/zh7K1Fqrv3w?si=NZYmG1g4mZiYx6Eb',
     project_images: [],
-    category: ['Vídeos Curtos'],
-    platform: 'instagram', // Define que é um post/vídeo do Instagram
-    software_used: ['Adobe Premiere Pro'],
+    category: ['Vídeos Longos'],
+    duration: '13:06',
+    software_used: [
+      'Adobe Premiere Pro',
+      'Adobe After Effects',
+      'Adobe Photoshop',
+    ],
   },
+  // {
+  //   id: 'DZk2UpFJS4O',
+  //   video_title: 'Faça terapia, priorize-se!',
+  //   video_description: 'Descrição do conteúdo do Instagram',
+  //   tags: ['Instagram', 'Psicologia', 'Conteúdo'],
+  //   cover_image: 'DZk2UpFJS4O', // ID do post do Instagram
+  //   publish_date: '2026-01-13',
+  //   client_name: 'Ádila Rebeca',
+  //   client_image: '/companies/adila.jpg',
+  //   client_feedback: '',
+  //   video_link: 'https://www.instagram.com/p/DZk2UpFJS4O/',
+  //   project_images: [],
+  //   category: ['Vídeos Curtos'],
+  //   platform: 'instagram', // Define que é um post/vídeo do Instagram
+  //   software_used: ['Adobe Premiere Pro'],
+  // },
 ]
