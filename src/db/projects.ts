@@ -140,7 +140,6 @@ export const allVideoProjects: VideoProject[] = [
     video_link: 'https://youtube.com/shorts/Ad7sHGVi0K4',
     project_images: [],
     category: ['Vídeos Curtos'],
-    platform: 'instagram', // Define que é um post/vídeo do Instagram
     software_used: ['Adobe Premiere Pro'],
   },
   {
@@ -156,7 +155,6 @@ export const allVideoProjects: VideoProject[] = [
     video_link: 'https://youtube.com/shorts/TljSyPEar1I',
     project_images: [],
     category: ['Vídeos Curtos'],
-    platform: 'instagram', // Define que é um post/vídeo do Instagram
     software_used: ['Adobe Premiere Pro'],
   },
 ]
