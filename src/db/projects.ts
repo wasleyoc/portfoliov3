@@ -133,11 +133,27 @@ export const allVideoProjects: VideoProject[] = [
       'Lidar com o luto e a saudade de quem partiu não é um caminho fácil de percorrer.',
     tags: ['Instagram', 'Psicologia', 'Conteúdo'],
     cover_image: 'Ad7sHGVi0K4', // ID do post do Instagram
-    publish_date: '2026-01-13',
+    publish_date: '2026-07-08',
     client_name: 'Ádila Rebeca',
     client_image: '/companies/adila.jpg',
     client_feedback: '',
-    video_link: 'https://youtube.com/shorts/Ad7sHGVi0K4?feature=share',
+    video_link: 'https://youtube.com/shorts/Ad7sHGVi0K4',
+    project_images: [],
+    category: ['Vídeos Curtos'],
+    platform: 'instagram', // Define que é um post/vídeo do Instagram
+    software_used: ['Adobe Premiere Pro'],
+  },
+  {
+    id: 'TljSyPEar1I',
+    video_title: 'Faça terapia, priorize-se!',
+    video_description: 'Cuide das suas emoções 💡',
+    tags: ['Instagram', 'Psicologia', 'Conteúdo'],
+    cover_image: 'TljSyPEar1I', // ID do post do Instagram
+    publish_date: '2026-07-08',
+    client_name: 'Ádila Rebeca',
+    client_image: '/companies/adila.jpg',
+    client_feedback: '',
+    video_link: 'https://youtube.com/shorts/TljSyPEar1I',
     project_images: [],
     category: ['Vídeos Curtos'],
     platform: 'instagram', // Define que é um post/vídeo do Instagram
