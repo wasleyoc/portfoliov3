@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    default: 'Wasley Carvalho – Editor de Vídeo & Vídeomaker',
+    default: 'Wasley Carvalho – Videomaker',
     template: '%s | Wasley Carvalho',
   },
   description:
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'pt-BR',
     url: 'https://www.wasley.com.br',
-    title: 'Wasley Carvalho – Video Editor & Videomaker',
+    title: 'Wasley Carvalho – Videomaker',
     description:
       'Editor de vídeo e Videomaker apaixonado, que entrega edições limpas e cinematográficas e uma narrativa visual dinâmica utilizando as ferramentas Photoshop, Premiere Pro, Illustrator, After Effects e DaVinci Resolve.',
     siteName: 'Wasley Carvalho Portfolio',
@@ -68,13 +68,13 @@ export const metadata: Metadata = {
         url: '/wasley.jpg',
         width: 1200,
         height: 630,
-        alt: 'Wasley Carvalho - Video Editor & Videomaker',
+        alt: 'Wasley Carvalho - Videomaker',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Wasley Carvalho – Video Editor & Videomaker',
+    title: 'Wasley Carvalho – Videomaker',
     description:
       'Crio edições cinematográficas, motion graphics e histórias cativantes. Deixe-nos transformar seu conteúdo em algo especial.',
     creator: '@wasleyoc', // update if you have a real Twitter handle
@@ -115,7 +115,7 @@ export default function RootLayout({
                 'https://youtube.com/@wasleyoc', // update if available
                 'https://twitter.com/wasleyoc', // update if available
               ],
-              jobTitle: 'Editor de Vídeo & Videomaker',
+              jobTitle: 'Videomaker',
               knowsAbout: [
                 'Video Editing',
                 'Videomaker',
